@@ -59,9 +59,12 @@ const Navbar = () => {
             listStyle: "none",
             width: "600px",
             margin:"auto",
-            backgroundColor:"rgba(255,255,255,0.5)"
+            marginTop:"20px",
+            // backgroundColor:"rgba(255,255,255,0.5)",
+            height:"40px"
           }}
         >
+          <img src="logo.jpg" alt="No image" />
           <li>Home</li>
           <li>Contact</li>
           <li>About</li>
