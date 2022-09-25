@@ -28,3 +28,6 @@
 .text-justify{
     text-align:justify;
 }
+body{
+    width: 1024px;
+}

@@ -30,7 +30,7 @@ const AboutMe = () => {
       <h1>About Me</h1>
       <p>
         Hii, Everyone My self Paveen Kumar,
-        <ul style={{listStyle:"none"}}>
+        <ul style={{ listStyle: "none" }}>
           <li>I'm Engineering Student</li>
           <li>20-year old Software Developer</li>
           <li>Crazy on Technology</li>
@@ -48,6 +48,28 @@ const Image = () => {
   );
 };
 
+const Navbar = () => {
+  return (
+    <div>
+      <nav>
+        <ul
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            listStyle: "none",
+            width: "600px",
+            margin:"auto",
+            backgroundColor:"rgba(255,255,255,0.5)"
+          }}
+        >
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 const text = ReactDOM.createRoot(document.getElementById("root"));
 text.render(<Detail fname="Paveen" lname="Kumar" />);
 
@@ -60,16 +82,11 @@ aboutme.render(<AboutMe />);
 const img = ReactDOM.createRoot(document.getElementById("img"));
 img.render(<Image />);
 
-const root = ReactDOM.createRoot(document.getElementById('time'));
-  
-function tick() {
-const element = (
-    <div>
-    <h1>Hello, world!</h1>
-    <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
-);
-root.render(element);
-}
+// const time = ReactDOM.createRoot(document.getElementById("time"));
+// time.render(<Time />);
 
-setInterval(tick, 1000);
+const nav = ReactDOM.createRoot(document.getElementById("navbar"));
+nav.render(<Navbar />);
+
+const about = ReactDOM.createRoot(document.getElementById("time"));
+about.render(<AboutMe />);
