@@ -70,23 +70,22 @@ const Navbar = () => {
     </div>
   );
 };
-const text = ReactDOM.createRoot(document.getElementById("root"));
-text.render(<Detail fname="Paveen" lname="Kumar" />);
 
-const greeting = ReactDOM.createRoot(document.getElementById("mess"));
-greeting.render(<Greeting fname="Paveen" lname="Kumar" />);
+const Footer=()=>{
+  return <p>© 2022 paveen kumar</p>
+}
 
-const aboutme = ReactDOM.createRoot(document.getElementById("aboutme"));
-aboutme.render(<AboutMe />);
-
-const img = ReactDOM.createRoot(document.getElementById("img"));
-img.render(<Image />);
-
-// const time = ReactDOM.createRoot(document.getElementById("time"));
-// time.render(<Time />);
-
-const nav = ReactDOM.createRoot(document.getElementById("navbar"));
-nav.render(<Navbar />);
-
-const about = ReactDOM.createRoot(document.getElementById("time"));
-about.render(<AboutMe />);
+const Page=()=>{
+  return(
+    <div>
+      <Navbar/>
+      <Greeting/>
+      <Detail/>
+      <AboutMe/>
+      <Image/>
+      <Footer/>
+    </div>
+  );
+}
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Page/>);
