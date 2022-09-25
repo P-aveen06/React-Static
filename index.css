@@ -13,3 +13,18 @@
 .font-30px{
     font-size: 30px;
 }
+.bg-blue{
+    background-color: rgb(8, 8, 24);
+}
+.text-white{
+    color:white;
+}
+.m-auto{
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align:justify;
+}
